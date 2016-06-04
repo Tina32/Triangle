@@ -10,4 +10,8 @@ describe 'triangle' do
     result = triangle(3, 4, 5)
     expect(result).to eq(:scalene)
   end
+  it "should return isosceles for 3x3x4 triangle" do
+    result = triangle(3, 3, 4)
+    expect(result).to eq(:isosceles)
+  end
 end
