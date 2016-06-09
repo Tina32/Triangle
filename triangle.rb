@@ -1,9 +1,7 @@
-a = 1
-b = 2
-c = 3
-
 def triangle(a, b, c)
-  if ((a == b) && (a == c) && (b == c))
+  if ( (a+b<=c) || (a+c<=b) || (b+c<=a) )
+    return :inequality
+  elsif ((a == b) && (a == c) && (b == c))
     return :equilateral
   elsif ((a == b) || (a == c) || (b == c))
     return :isosceles
@@ -12,6 +10,6 @@ def triangle(a, b, c)
   end
 end
 
-puts triangle(3, 3, 3)
-puts triangle(3, 4, 5)
+# puts triangle(3, 3, 3)
+# puts triangle(3, 4, 5)
 

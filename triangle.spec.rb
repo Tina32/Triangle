@@ -14,4 +14,9 @@ describe 'triangle' do
     result = triangle(3, 3, 4)
     expect(result).to eq(:isosceles)
   end
+
+    it "should return inequality for a triangle that is not valid" do
+      result = triangle(1, 1, 4)
+      expect(result).to eq(:inequality)
+  end
 end
