@@ -1,11 +1,18 @@
+
+# calls the method for Triangle
 def triangle(a, b, c)
+
+  # checks if triangle is a valid triangle
   if ( (a+b<=c) || (a+c<=b) || (b+c<=a) )
     return :inequality
+    # checks is triangle is equuilateral
   elsif ((a == b) && (a == c) && (b == c))
     return :equilateral
+    # checks is triangle is isosoceles
   elsif ((a == b) || (a == c) || (b == c))
     return :isosceles
   else
+    # resturns scalene if triangle is has 3 different sides
     return :scalene
   end
 end
